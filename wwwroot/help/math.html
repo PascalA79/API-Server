@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <style>
+        body{
+            font-weight: bold;
+            margin: 20px;
+        }
+        div{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div>GET : Maths endpoint</div>
+    <div>List of possible query string:</div>
+    <hr>
+    <pre>
+? op = + & x = number & y = number
+return {"op" :"+", "x" :number, "y" :number, "value" : x + y}
+
+? op = - & x = number & y = number
+return {"op" :"-", "x" :number, "y" :number, "value" : x - y}
+
+? op = * & x = number & y = number
+return {"op" :"*", "x" :number, "y" :number, "value" : x * y}
+
+? op = / & x = number & y = number
+return {"op" :"/", "x" :number, "y" :number, "value" : x / y}
+
+? op = % & x = number & y = number
+return {"op" :"%", "x" :number, "y" :number, "value" : x % y}
+
+? op = ! & n = integer
+return {"op" :"!", "n" :integer, "value" : n!}
+
+? op = p & n = integer
+return {"op" :"p", "n" :integer, "value" : true if n is a prime number}
+
+? op = np & n = integer
+return {"op" :"np", "n" :integer, "value" : nth prime number}
+
+    </pre>
+</body>
+</html>
